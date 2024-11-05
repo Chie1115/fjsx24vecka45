@@ -1,20 +1,87 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="sv">
   <head>
     <meta charset="UTF-8" />
     <title>DOM Övning 1</title>
+    <style>
+         .highlight {
+           background-color: yellow;
+         }
+    </style>
   </head>
   <body>
     <h1 id="huvudrubrik">Min Webbsida</h1>
     <p class="text">Detta är en paragraf.</p>
     <p class="text">Detta är en annan paragraf.</p>
-    <img id="bild" src="bild1.jpg" alt="Bild 1" />
-
+    <img id="bild" src="bild1.jpg" alt="Bild 1" />  -->
+      <!-- Three images with the class "bild" -->
+      <!-- <img class="bild" src="bild1.jpg" alt="Bild 1" />
+      <img class="bild" src="bild2.jpg" alt="Bild 2" />
+      <img class="bild" src="bild3.jpg" alt="Bild 3" />
     <ul>
       <li class="item">Item 1</li>
       <li class="item">Item 2</li>
       <li class="item">Item 3</li>
+    </ul> -->
+
+    <!-- Container for Exercise 5 -->
+  <!-- <div id="listaContainer">
+    <ul>
+      <li>Punkt 1</li>
+      <li>Punkt 2</li> This should change to "Uppdaterad punkt"
+      <li>Punkt 3</li>
     </ul>
+  </div>
+
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+
     <script src="exercise.js"></script>
   </body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <title>Selektorer Övning</title>
+  <style>
+    .dold {
+        display: none; /* このクラスが適用された要素は表示されません */
+    }
+    .framträdande {
+        color: red; /* このクラスが適用された要素のテキストは赤くなります */
+        font-weight: bold; /* 太字になります */
+    }
+</style>
+</head>
+<body>
+  <h1 id="rubrik">Min Webbsida</h1>
+  <p class="beskrivning">Detta är en beskrivande text.</p>
+  <p class="beskrivning">Detta är en annan beskrivande text.</p>
+  <div data-info="viktig" class="box">
+    <span>Något viktigt innehåll</span>
+  </div>
+  <ul>
+    <li class="item">Item 1</li>
+    <li class="item highlight">Item 2</li>
+    <li class="item">Item 3</li>
+  </ul>
+
+  <div id="textContainer">
+    <p>Detta är en <strong>viktig</strong> text.</p>
+    <!-- En dold paragraf -->
+    <p style="display: none;">Denna text är dold.</p>
+  </div>
+
+  <h1>Välkommen till vår webbsida</h1>
+    <a id="minLänk" href="https://www.example.com" title="Besök Example.com">Besök vår sida</a>
+
+  <script src="exercise.js"></script>
+</body>
 </html>
