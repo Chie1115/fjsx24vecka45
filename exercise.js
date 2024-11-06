@@ -126,7 +126,7 @@
 
 
 
-// // ------------------------------
+/// ------------------------------
 // // Övning 6: Använda querySelectorAll och Looping över NodeList
 
 // // Uppgift:
@@ -142,6 +142,7 @@
 // // Öva på att använda querySelectorAll, loopa över en NodeList, och manipulera flera element baserat på deras position.
 
 // // Select all div elements with the class "box"
+
 // const boxes = document.querySelectorAll('.box');
 
 // // Loop through each box and make changes based on position
@@ -241,7 +242,9 @@ console.log(viktigBox);
 // Förstå skillnaden mellan innerHTML och textContent och när man bör använda dem.
 
 // Ändra innehållet i div-elementet med class="box" med innerHTML
-viktigBox.innerHTML = '<h2>Ny Rubrik</h2><p>Detta är nytt innehåll.</p>';
+let nyBox = document.getElementsByClassName("box");
+console.log(nyBox);
+nyBox[0].innerHTML = '<h2>Ny Rubrik</h2><p>Detta är nytt innehåll.</p>';
 
 // Ändra texten i första paragrafen med klassen "beskrivning" med textContent
 const förstaBeskrivning = document.querySelector('.beskrivning');
